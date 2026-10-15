@@ -1,0 +1,77 @@
+{% extends "_base.html" %}
+{% set titulek = 'Lezitranz – medzinárodná kamiónová doprava po celej EÚ | Lehotský comp s.r.o.' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="hero-foto">{{ img('scania1.jpg', 'Kamión Lezitranz v horskej krajine', sizes='100vw') }}</div>
+  <div class="wrap hero-text">
+    <p class="stitok">Od roku 1994 na trhu</p>
+    <h1>Preprava tovaru po celej EÚ, spoľahlivo a načas</h1>
+    <p class="uvod">Vlastné vozidlá s nosnosťou od 0,1 do 24 ton a objemom do 120 m³, s GPS monitoringom. Celovozové aj čiastkové prepravy, dokládky a ďalšie služby podľa Vašich požiadaviek.</p>
+    <p><a class="tlacidlo" href="#kontakt">Nezáväzný dopyt</a> <a class="tlacidlo druhe" href="#sluzby">Naše služby</a></p>
+  </div>
+</section>
+
+<section class="cisla">
+  <div class="wrap">
+    <ul role="list">
+      <li><strong>30+</strong><span>rokov skúseností</span></li>
+      <li><strong>24 t</strong><span>nosnosť vozidiel</span></li>
+      <li><strong>120 m³</strong><span>objem nákladu</span></li>
+      <li><strong>GPS</strong><span>monitoring vozidiel</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas">
+  <div class="wrap dva">
+    <div>
+      <h2>Prečo Lezitranz</h2>
+      <p>Firma Lezitranz má dlhoročné skúsenosti v oblasti dopravy už od roku 1994. Špecializujeme sa na prepravu v rámci celej EÚ. Realizujeme celovozové aj čiastkové prepravy, dokládky a iné podľa požiadaviek zákazníka.</p>
+      <p>Na prepravu tovaru používame vlastné vozidlá s nosnosťou od 0,1 do 24 ton a objemom do 120 kubických metrov. Samozrejmosťou sú GPS monitorovacie systémy.</p>
+      <ul class="znacky" role="list">
+        <li>Celovozové prepravy</li><li>Čiastkové prepravy</li><li>GPS monitoring</li><li>Poistenie nákladu</li><li>Express doručenie</li><li>Celá EÚ</li>
+      </ul>
+    </div>
+    <div class="foto-okraj">{{ img('man1.jpg', 'Kamión MAN s označením Lehotský comp s.r.o.', sizes='(min-width: 60rem) 28rem, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce tmava" id="sluzby">
+  <div class="wrap">
+    <h2>Naše služby</h2>
+    <ul class="karty" role="list">
+      {% for s in data.sluzby %}<li><span class="cislo">0{{ loop.index }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="vozidla">
+  <div class="wrap">
+    <h2>Vozový park</h2>
+    <p class="podnadpis">Pravidelne obnovovaný vozový park pre spoľahlivú prepravu.</p>
+    <ul class="galerie" role="list">
+      <li>{{ img('man2.jpg', 'Kamión MAN Lezitranz', sizes='(min-width: 60rem) 18rem, 50vw') }}</li>
+      <li>{{ img('scania2.jpg', 'Kamión Scania Lezitranz', sizes='(min-width: 60rem) 18rem, 50vw') }}</li>
+      <li>{{ img('renault1.jpg', 'Nákladné vozidlo Renault', sizes='(min-width: 60rem) 18rem, 50vw') }}</li>
+      <li>{{ img('iveco2.jpg', 'Nákladné vozidlo Iveco', sizes='(min-width: 60rem) 18rem, 50vw') }}</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce svetla" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <h2>Získajte cenovú ponuku</h2>
+      <p>Napíšte nám, odkiaľ kam a čo potrebujete prepraviť. Pošleme Vám nezáväznú ponuku.</p>
+      <dl class="kontakty">
+        <dt>Dispečer</dt><dd><a href="tel:+421903529987">+421 903 529 987</a></dd>
+        <dt>Konateľ</dt><dd><a href="tel:+421903307640">+421 903 307 640</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:lezitranz@lezitranz.sk">lezitranz@lezitranz.sk</a></dd>
+        <dt>Adresa</dt><dd>Lehotský comp s.r.o., 032 33 Kráľová Lehota 266</dd>
+      </dl>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

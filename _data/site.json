@@ -1,0 +1,51 @@
+{
+  "slug": "sk-lezitranz",
+  "nazev": "Lehotský comp s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-lezitranz/",
+  "base": "/sk-lezitranz/",
+  "lang": "sk",
+  "popis": "Lehotský comp s.r.o. (LEZITRANZ): medzinárodná kamiónová doprava po celej EÚ od roku 1994. Celovozové aj čiastkové prepravy, vozidlá do 24 t a 120 m³.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "scania1.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#0a0f1a",
+  "typ": "LocalBusiness",
+  "ico": "36420298",
+  "kontakt": {
+    "email": "lezitranz@lezitranz.sk",
+    "telefon": "+421 903 529 987",
+    "adresa": {
+      "ulice": "Kráľová Lehota 266",
+      "psc": "032 33",
+      "mesto": "Kráľová Lehota",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu lezitranz.sk"
+  },
+  "nav": [
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Vozový park",
+      "href": "#vozidla"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
