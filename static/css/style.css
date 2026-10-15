@@ -63,7 +63,7 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
 
 /* Lezitranz: brand z jejich webu (tmavá navy, cyan #00d4ff, fialová #7c3aed) */
-:root { --bg:#fff; --text:#141b2d; --muted:#4b5568; --accent:#7c3aed; --accent-text:#fff; --line:#e1e6ef; --navy:#0a0f1a; --cyan:#00d4ff; --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --font-head:var(--font-body); }
+:root { --bg:#fff; --text:#141b2d; --muted:#4b5568; --accent:#7c3aed; --accent-text:#fff; --line:#e1e6ef; --navy:#0a0f1a; --cyan:#00d4ff; --font-body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --font-head:var(--font-body); }
 body { font-family:var(--font-body); color:var(--text); background:var(--bg); font-size:var(--step-0); line-height:1.65; }
 h1,h2,h3 { font-family:var(--font-head); line-height:1.15; letter-spacing:-.01em; }
 .wrap { width:min(72rem,100% - 2.5rem); margin-inline:auto; }
@@ -118,3 +118,5 @@ h1,h2,h3 { font-family:var(--font-head); line-height:1.15; letter-spacing:-.01em
 .paticka a { color:var(--cyan); }
 .kontakty a { display:inline-block; padding-block:.55rem; }
 .hlavicka nav a { padding-block:.75rem; }
+
+.hlavicka nav a { display:inline-block; min-height:44px; padding-block:.75rem; min-width:44px; }
