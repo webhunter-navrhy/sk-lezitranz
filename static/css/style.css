@@ -116,3 +116,5 @@ h1,h2,h3 { font-family:var(--font-head); line-height:1.15; letter-spacing:-.01em
 .past { position:absolute; left:-9999px; }
 .paticka { background:var(--navy); color:#94a3b8; padding-block:2rem; font-size:var(--step--1); }
 .paticka a { color:var(--cyan); }
+.kontakty a { display:inline-block; padding-block:.55rem; }
+.hlavicka nav a { padding-block:.75rem; }
